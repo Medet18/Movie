@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width, initial-scale=1.0">
+	<title>Regestration & login</title>
+	<link rel="stylesheet" type="text/css" href="CSS/LoginPro.css">
+	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleaps.com/css?family=Righteous&display=swap">
+	
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<form id="myform">
+		<div class="main">
+			<div class="left">
+				<!-- <img src="https://wikicomics.ru/uploads/photos/show/616_dedpul-pos.jpg"> -->
+			</div>
+
+			<div class="right">
+				<div class="option">
+					<ul>
+						<li class="register-op">Register</li>
+						<li class="login-op">Login</li>
+					</ul>
+				</div>
+
+				<div class="register">
+					<div class="text">
+						<input id="mail" type="text" class="input" name="" placeholder="E-mail">
+					</div>
+					
+					<div class="text">
+						<input class="input" type="text" name="" placeholder="UserName">
+					</div>
+					
+					<div class="text">
+						<input id="tpassword" class="input" type="password" name="" placeholder="Password">
+					</div>
+
+					<div class="text">
+						<input id="ctpassword" class="input" type="password" name="" placeholder="Again password">
+					</div>
+
+					<div class="btn">
+						<a href="#" id="btnSubmit" onclick="check()">Registration</a>
+					</div>
+				</div>
+
+				<div class="login">
+					<div class="text">
+						<input id="Lmail" class="input" type="text" name="" placeholder="E-mail">
+					</div>
+
+					<div class="text">
+						<input id="thpassword" class="input" type="password" name="" placeholder="Password">
+					</div>
+
+					<div class="btn">
+						<a href="#" onclick="LOG()">Login</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</form>
+
+	<script type="text/javascript" src="JS/LoginPro.js"></script>
+</body>
+</html>

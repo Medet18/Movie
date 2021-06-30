@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Campatible" content="IE-edge">
+	<title>Movie</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Project_1.css">
+	<link type="text/css" rel="stylesheet" href="CSS/lightslider.css" />                  
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<script src="JS/lightslider.js"></script>
+	<script type="text/javascript" src="JS/script.js"></script>
+	<script type="text/javascript" src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<!-- <link rel="shortcut icon" href="images/fav icon.png"> -->
+</head>
+<!--Using FontAwesomr--------------->
+
+<body>
+	<!--Navigation----------------->
+	<nav>
+		<a href="#" id="logo" onmouseover="large(this)" onmouseout="litle(this)" onclick="window.location.reload()"><img src="IMAGE/L.png" alt="logo"></a>
+		<!-----------mmenu btn----------------->
+		<input type="checkbox" name="" class="menu_btn" id="menu_btn">
+		<label class="menu_icon" for="menu_btn">
+			<span class="nav_icon"></span>
+		</label>
+
+		<ul class="menu">
+			<li><a href="#" onclick="window.location.reload()">Home</a></li>
+			<li><a href="#">Movies</a></li>
+			<li><a href="#">Tv Shows</a></li>
+			<li><a href="#">Hollywood</a></li>
+			<li ><a id="loginC" target="_blank" href="LoginPro.htm" onclick="changeLog(this)">LogIn & Register</a></li>
+		</ul>
+		<!--Search----------------->
+		<div class="search">
+			<input type="text" name="" placeholder="Find Your liked Movies">
+			<!--Search icon-------------->
+			<i class="fas fa-search"></i>
+		</div>
+	</nav>
+	
+	<!------------------------------------------------------------------------>
+
+		<section id="movies_list" class="mov">
+		<!-------box-1--------->
+		<div class="movies_box">
+			<!--------img_3---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://i.pinimg.com/originals/a2/10/bb/a210bb32416b8369004e3c0f79f50c07.jpg" alt="Captain Marvel">
+			</div>
+			<!----------text----------------->
+			<a class="a" target="_blank" href="index.html" onload="load(this)">
+				Captain Marvel (2019) Starting from September only in cinemas HD quality
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_1---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://i.pinimg.com/736x/50/be/da/50beda9281aea5004e5ebfd1b9f85a95--movie-couples-wallpaper.jpg" alt="Avatar">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Avatar (2006) Starting from September only in cinemas HD quality
+			</a>
+		</div>
+		
+		<div class="movies_box">
+			<!--------img_2---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://picfiles.alphacoders.com/138/138143.jpg" alt="Reinger">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Single Reinger (2012) Starting from September only in cinemas HD quality
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_4---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://static.zerochan.net/Shazam.full.2389890.jpg" alt="Shazam">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Shazam (2019) Starting from September only in cinemas HD quality
+			</a>
+		</div>
+
+	</section>
+
+<!------------------------------------------------------------------------->
+
+	<section id="main">
+		<!----Showcase--->
+		<!---heading-->
+		<h1 class="showcase_heading"><b>Showcase</b></h1>
+
+		<ul id="autoWidth" class="cs-hidden">
+		  <!--box---------->
+		  <li class="item-a">
+			<div class="showcase_box">
+				<img src="https://ohmy.disney.com/wp-content/uploads/2014/10/big_hero_6_poster_malaysia.jpg" alt="Hero">
+			</div>
+		  </li>
+
+		  <li class="item-b">
+			<div class="showcase_box">
+				<img src="https://www.arthipo.com/image/cache/catalog/poster/movie/1-758/pfilm326-cloudy-with-a-chance-of-meatballs-2_e3349d98-movie-poster-cizgi-film-1000x1000.jpg" alt="Food">
+			</div>
+		  </li>
+
+		  <li class="item-c">
+			<div class="showcase_box">
+				<img src="https://cdn.cinematerial.com/p/297x/haeorwgk/1917-british-movie-poster-md.jpg?v=1579166770" alt="1917">
+			</div>
+		  </li>
+
+		  <li class="item-d">
+			<div class="showcase_box">
+				<img src=" https://images-na.ssl-images-amazon.com/images/I/71t--RaUiNL._AC_SY679_.jpg" alt="Avengers">
+			</div>
+		  </li>
+		  
+		  
+		</ul>
+	</section>
+	<!--slider -script---------------->
+	<!-------Ltest-movie------------------------>
+	<section id="latest">
+		<h2 class="latest_heading"><b>Latest Movies</b></h2>
+		<!---Slider------------------>
+		<ul id="autoWidth2" class="cs-hidden">
+			<!--Slider box -1 ----------------->
+		  <li class="item-a">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://webneel.net/file/images/11-16/4-maleficent-brilliant-movie-poster-design.jpg" alt="Malifisenta">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>Malifisenta 2014</strong>
+		  			<p>Fantasy film</p>
+		  		</div>
+		  	</div>
+		  </li>
+		  
+		  <li class="item-b">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://i.pinimg.com/originals/cd/2f/e9/cd2fe98d8698bee0e6b8f5fc56ee6691.jpg" alt="Z">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>World War Z 2014</strong>
+		  			<p>Horror film</p>
+		  		</div>
+		  	</div>
+		  </li>
+		  
+		  <li class="item-c">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<a  class="a" target="_blank" href="index.html"><img src="https://picfiles.alphacoders.com/245/thumb-1920-245612.jpg" alt="CAP"></a>
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>Captain Marvel 2019</strong>
+		  			<p>Fantastic film</p>
+		  		</div>
+		  	</div>
+		  </li>
+		  
+		  <li class="item-d">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/Thor-Jane-Foster-The-Dark-World.jpg" alt="Thor">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>THOR 2013</strong>
+		  			<p>Fantasytic film</p>
+		  		</div>
+		  	</div>
+		  </li>
+		  
+		  <li class="item-e">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://pix-feed.com/wp-content/uploads/2018/12/more-serfing-akuly-opasnost.jpg" alt="Shark">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>Shark 2014</strong>
+		  			<p>Horror film</p>
+		  		</div>
+		  	</div>
+		  </li>
+		  
+		  <li class="item-f">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEErgEwS2Ffi0HPd7QX8bu_AfcjFo5_Gki6w&usqp=CAU" alt="Venom">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>Venom 2019</strong>
+		  			<p>Fantasy film</p>
+		  		</div>
+		  	</div>
+		  </li>
+
+		   <li class="item-f">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://mymodernmet.com/wp/wp-content/uploads/2018/01/honest-movie-posters-1.jpg" alt="Harry">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>Harry Oldman 2015</strong>
+		  			<p>Documental film</p>
+		  		</div>
+		  	</div>
+		  </li>
+
+		   <li class="item-f">
+		  	<div class="latest_box">
+		  		<!-----img--------->
+		  		<div class="latest_b_img">
+		  			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a0a10589201581.5dee1c51d02d1.png" alt="Sonic">
+		  		</div>
+		  		<!-----------text------------>
+		  		<div class="latest_b_text">
+		  			<strong>Sonic 2019</strong>
+		  			<p>Action film</p>
+		  		</div>
+		  	</div>
+		  </li>
+		</ul>
+	</section>
+
+	<div class="movies_heading">
+		<h2><b>Movies</b></h2>
+	</div>
+
+	<section id="movies_list">
+		<!-------box-1--------->
+		<div class="movies_box">
+			<!--------img_1---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://images-na.ssl-images-amazon.com/images/I/51OccwfESZL._AC_.jpg" alt="Cap">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Captain America (2016) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+		
+		<div class="movies_box">
+			<!--------img_2---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://i.pinimg.com/736x/dc/78/23/dc78234dbf8e03b6a18abecf68877f8b.jpg" alt="Aliens">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Aliens (2017) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_3---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://i.pinimg.com/originals/75/d5/10/75d5106643d5ec1903cfc8d929b7bd3a.jpg" alt="Ant man">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Ant Man (2015) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_4---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://i0.wp.com/batman-news.com/wp-content/uploads/2019/12/Birds-of-Prey-Official-Images-Movie-Poster-3-01.jpeg?quality=80&strip=info&ssl=1" alt="Bird of prey">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Birds of prey (2019) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_5---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://i.pinimg.com/originals/7d/a1/d8/7da1d8bca462dc15f5158275829676bb.jpg" alt="Blodshot">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Blodshot (2020) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_6---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://www.goodillustration.com/blog/wp-content/uploads/2018/10/Hellboy-24-x-36-WEB.jpg" alt="Star wars">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Star Wars (2020) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_7---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://upload.wikimedia.org/wikipedia/ru/thumb/5/56/Tenet_%28poster%29.jpg/1200px-Tenet_%28poster%29.jpg" alt="Tenet">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Tenet (2020) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+
+		<div class="movies_box">
+			<!--------img_8---------->
+			<div class="movies_img">
+				<div class="quality">HDRip</div>
+				<img src="https://www.sideshow.com/wp/wp-content/uploads/2019/08/addams5.jpg" alt="Famaly Adams">
+			</div>
+			<!----------text----------------->
+			<a href="#">
+				Family Adams (2018) Full Movie in Russia with English subtitles | HDRip 1080p HD
+			</a>
+		</div>
+	</section>
+	<!-----------panel--------------->
+	<div id="flip" onclick="Click(this)" onclick="show()">Click to show Advertisement!</div>
+		<div id="panel">
+			<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1" width="100%" height="100%"></iframe>
+		</div>
+	</div>
+	<!-------btns---------------->
+	<div class="btns">
+		<a href="#">Previous</a>
+		<a href="#">Next</a>
+	</div>
+	<!--------Foooter------------>
+		
+	<footer class="footer">
+		<!-- <p>Going to internet ,Ltd cnsumer Website</p>
+		<p>Copyright 2020 - Going to internet</p> -->
+		<div class="container">
+			<div class="sec abouts">
+				<h2 class="h2">About US</h2>
+				<p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat..</p>
+			
+				<ul class="sci">
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="sec quick">
+				<h2 class="h2">Quick Links</h2>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Terms & Consitions</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="sec contact">
+				<h2 class="h2">Map Info</h2>
+				<div id="googleMap" style="width: 100%; height: 80%;"></div>
+			</div>
+
+		</div>
+	</footer>
+	<div class="copy">
+		<p>Copyright @ 2020 Online Tutorials. All Rights Reserved</p>
+	</div>
+
+	<script>
+	function myMap() {
+		var mapProp= {
+			// akatu
+			center:new google.maps.LatLng(43.65890287514816, 51.19916171406434), //TRK 43.667205852537194, 51.15193708075702),
+			zoom:13.5,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		setMarkers(map);
+
+		setPoly(map);
+
+		var myCity = new google.maps.Circle({
+			//akatau
+		  center:new google.maps.LatLng(43.65890287514816, 51.19916171406434),//,43.6529196584168, 51.141196126260404),
+		  radius:150,
+		  strokeColor:"#FF0000",
+		  strokeOpacity:0.5,
+		  strokeWeight:1.5,
+		  fillColor:"#FF0000",
+		  fillOpacity:0.4
+		});
+		myCity.setMap(map);
+
+		var infowindow = new google.maps.InfoWindow({
+		  content:"Aktau embankment"
+		});
+		google.maps.event.addListener(marker, 'click', function() {
+		  	infowindow.open(map,marker);
+		});
+	}
+
+	const beaches = [
+	  ["Aktau Beach", 43.65474467779268, 51.13803831329659, 4],
+	  ["Sber Bank", 43.666856638763136, 51.13554760942042, 5],
+	  ["Astana",43.6529196584168,51.141196126260404, 3],
+	  ["Dream", 43.66062953466289, 51.156312176178076, 2],
+	  ["Aktau", 43.667205852537194,51.15193708075702, 1],
+	];
+
+	function setMarkers(map){
+	
+		const image = {
+			//flag
+	    url:
+	      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+	    size: new google.maps.Size(20, 32),
+	    origin: new google.maps.Point(0, 0),
+	    anchor: new google.maps.Point(0, 32),
+	  	};
+
+	  	const shape = {
+		    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+		    type: "poly",
+		  };
+
+	    for (let i = 0; i < beaches.length; i++) {
+	     	const beach = beaches[i];
+	     	new google.maps.Marker({
+	     	 position: { lat: beach[1], lng: beach[2] },
+	      	map,
+	      	icon: image,
+	      	shape: shape,
+	      	title: beach[0],
+	      	zIndex: beach[3],
+	    });
+	  }
+	}
+		const triangleCoords = [
+	    { lat: 43.65474467779268, lng: 51.13803831329659},//naberjka
+	    { lat: 43.6529196584168, lng: 51.141196126260404},//astana
+	    { lat:43.66062953466289, lng: 51.156312176178076},//dream
+	    { lat:43.667205852537194,lng: 51.15193708075702 },//trk
+	    { lat: 43.666856638763136, lng: 51.13554760942042}//sber
+	  ];
+	  // Construct the polygon.
+	  function setPoly(map){
+	  	const bermudaTriangle = new google.maps.Polygon({
+		    paths: triangleCoords,
+		    strokeColor: "#FF0000",
+		    strokeOpacity: 0.8,
+		    strokeWeight: 2,
+		    fillColor: "#FF0000",
+	    	fillOpacity: 0.35,
+	  	});
+	  	bermudaTriangle.setMap(map);
+	 }
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBPiTALBRqLQeoSuQEBieEiqt4ApqR0_M&callback=myMap"></script>
+
+	</body>
+</html>

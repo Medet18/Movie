@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com?css?family=Prompt");
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Prompt",sans-serif;
+}
+body{
+	/*background:#fdcb6e;*/
+	background-image: url("https://www.freevector.com/uploads/vector/preview/30374/Colorful-Plait-Background.jpg");
+	/*url("https://img.freepik.com/free-vector/abstract-blue-texture-hexagon-background_67845-559.jpg?size=626&ext=jpg");*/
+	background-repeat: no-repeat;
+	background-size: cover; 
+}
+.main{
+	display: flex;
+	width:102%;
+	height: 380px;
+	max-width: 560px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.main .left, .main .right {
+	padding: 30px;
+	width: 50%;
+	height: 100%;
+}
+.main .left{
+	background-image:url("https://st3.depositphotos.com/4881653/12907/v/950/depositphotos_129077508-stock-illustration-cinema-time-home-movie-watching.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.main .left img{
+	display: block;
+	width: 220px;
+	margin: 115px auto 0;
+}
+.main .right{
+	background:rgb(248, 225, 199);/*rgb(248, 232, 206);*/
+	/*#fff*/
+}
+.main .right .option  ul{
+	text-align: center;
+}
+.main .right .option ul li{
+	display: inline-block;
+	margin: 5px;
+	padding: 5px 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color:#494f57;
+	cursor: pointer;
+}
+.main .right .option ul li.active{
+	border-bottom: 2px solid #00b894;
+}
+.main .right .register, .main .right .login{
+	margin-top: 20px;
+}
+.main .right .text{
+	margin-bottom: 15px;
+}
+.main .right .text .input{
+	background: white;
+	font-size: 12px;
+	padding: 10px 15px;
+	border:0;
+	width: 100%;
+}
+.main .right .btn{
+	background: #00b894;
+	margin-top: 20px;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px;
+	font-weight: 400;
+}
+.main .right .btn a{
+	display: block;
+	font-size:14px;
+	color: #fff;
+}

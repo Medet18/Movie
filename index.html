@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=divice:width , initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<link type="text/css" rel="stylesheet" href="CSS/lightslider.css" />                  
+	
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="JS/lightslider.js"></script>
+  <script type="text/javascript" src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+	<script>
+    $(document).ready(function() {
+      $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+          loop:true,
+          onSliderLoad: function() {
+              $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+          }
+      });
+  });
+  function closed(a){
+    var b ,c ,d;
+    b = a.innerHTML;
+    c = b.charAt();
+    if(c == 'H'){
+      alert("Do you want to close this webpage!!");
+      // window.open('','_parent','');
+      d.close();
+    }
+  } 
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="#" class="logo" onclick="closedI()"><img src="IMAGE/L.png"></a>
+    <!-----------mmenu btn----------------->
+    <input type="checkbox" name="" class="menu_btn" id="menu_btn">
+    <label class="menu_icon" for="menu_btn">
+      <div class="nav_icon"></div>
+    </label>
+
+    <ul class="menu">
+      <li><a href="#" onclick="closed(this)">Home</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">Tv Shows</a></li>
+      <li><a href="#">Hollywood</a></li>
+      <li><a href="#">Horror</a></li>
+    </ul>
+    <!--Search----------------->
+    <div class="search">
+      <input type="text" name="" placeholder="Find Your liked Movies">
+      <!--Search icon-------------->
+      <i class="fas fa-search"></i>
+    </div>
+  </nav>
+  <section>
+      <div class="card">
+        <div class="content">
+          <h2>Captain Marvel 2019</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.t, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#">Whatch Full Film!</a>
+        </div>
+        <img src="IMAGE/img.png ">
+      </div>
+  </section>
+  <div class="Trailer">Watch Movie Trailer Captain Marvel(2019)</div>
+  
+  <div class="video">
+     <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+  </div>
+
+  <!----Rating----->
+
+  <div class="skills">
+          <h1>Raiting of films</h1>
+          <li class="li">
+            <h3>Expected Fees all over the world 985million$ 90%</h3><span class="bar"><span class="html"></span></span>
+          </li>
+          <li class="li">
+            <h3>Expected Viewer opinion 65%</h3><span class="bar"><span class="css"></span></span>
+          </li>
+          <li class="li">
+            <h3>Expected director opinion 70%</h3><span class="bar"><span class="js"></span></span>
+          </li>
+          <li class="li">
+            <h3>Fees in Chines 70%</h3><span class="bar"><span class="jq"></span></span>
+          </li>
+      </div>
+      <!--------------Section------------------------->
+      <section id="latest">
+    <h2 class="latest_heading" style="color: white"><b>Recomended Movies</b></h2>
+    <!---Slider------------------>
+    <ul id="autoWidth2" class="cs-hidden">
+      <!--Slider box -1 ----------------->
+      <li class="item-a">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://webneel.net/file/images/11-16/4-maleficent-brilliant-movie-poster-design.jpg" alt="Malifisenta">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>Malifisenta 2014</strong>
+            <p>Fantasy film</p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="item-b">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://i.pinimg.com/originals/cd/2f/e9/cd2fe98d8698bee0e6b8f5fc56ee6691.jpg" alt="Z">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>World War Z 2014</strong>
+            <p>Horror film</p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="item-c">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <a  class="a" target="_blank" href="index.html"><img src="https://i.pinimg.com/736x/02/d9/2d/02d92d952b509f4ab8ef0f1b476f6914.jpg" alt="CAP"></a>
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>Captain Marvel 2019</strong>
+            <p>Fantastic film</p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="item-d">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://d13ezvd6yrslxm.cloudfront.net/wp/wp-content/images/Thor-Jane-Foster-The-Dark-World.jpg" alt="Thor">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>THOR 2013</strong>
+            <p>Fantasytic film</p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="item-e">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://pix-feed.com/wp-content/uploads/2018/12/more-serfing-akuly-opasnost.jpg">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>Shark 2014</strong>
+            <p>Horror film</p>
+          </div>
+        </div>
+      </li>
+      
+      <li class="item-f">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEErgEwS2Ffi0HPd7QX8bu_AfcjFo5_Gki6w&usqp=CAU" alt="Venom">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>Venom 2019</strong>
+            <p>Fantasy film</p>
+          </div>
+        </div>
+      </li>
+
+       <li class="item-f">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://mymodernmet.com/wp/wp-content/uploads/2018/01/honest-movie-posters-1.jpg" alt="Harry">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>Harry Oldman 2015</strong>
+            <p>Documental film</p>
+          </div>
+        </div>
+      </li>
+
+       <li class="item-f">
+        <div class="latest_box">
+          <!-----img--------->
+          <div class="latest_b_img">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a0a10589201581.5dee1c51d02d1.png" alt="Sonic">
+          </div>
+          <!-----------text------------>
+          <div class="latest_b_text">
+            <strong>Sonic 2019</strong>
+            <p>Action film</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <!-- <p>Going to internet ,Ltd cnsumer Website</p>
+    <p>Copyright 2020 - Going to internet</p> -->
+    <div class="container">
+      <div class="sec abouts">
+        <h2 class="h2">About US</h2>
+        <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat..</p>
+      
+        <ul class="sci">
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="sec quick">
+        <h2 class="h2">Quick Links</h2>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Terms & Consitions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="sec contact">
+        <h2 class="h2">Map Info</h2>
+        <div id="googleMap" style="width: 100%; height: 80%;"></div>
+      </div>
+
+    </div>
+  </footer>
+  <div class="copy">
+    <p>Copyright @ 2020 Online Tutorials. All Rights Reserved</p>
+  </div>
+
+  <script>
+  function myMap() {
+    var mapProp= {
+      // akatu
+      center:new google.maps.LatLng(43.65890287514816, 51.19916171406434), //TRK 43.667205852537194, 51.15193708075702),
+      zoom:13.5,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+    setMarkers(map);
+
+    setPoly(map);
+
+    var myCity = new google.maps.Circle({
+      //akatau
+      center:new google.maps.LatLng(43.65890287514816, 51.19916171406434),//,43.6529196584168, 51.141196126260404),
+      radius:150,
+      strokeColor:"#FF0000",
+      strokeOpacity:0.5,
+      strokeWeight:1.5,
+      fillColor:"#FF0000",
+      fillOpacity:0.4
+    });
+    myCity.setMap(map);
+
+    var infowindow = new google.maps.InfoWindow({
+      content:"Aktau embankment"
+    });
+    google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map,marker);
+    });
+  }
+
+  const beaches = [
+    ["Aktau Beach", 43.65474467779268, 51.13803831329659, 4],
+    ["Sber Bank", 43.666856638763136, 51.13554760942042, 5],
+    ["Astana",43.6529196584168,51.141196126260404, 3],
+    ["Dream", 43.66062953466289, 51.156312176178076, 2],
+    ["Aktau", 43.667205852537194,51.15193708075702, 1],
+  ];
+
+  function setMarkers(map){
+  
+    const image = {
+      //flag
+      url:
+        "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
+      size: new google.maps.Size(20, 32),
+      origin: new google.maps.Point(0, 0),
+      anchor: new google.maps.Point(0, 32),
+      };
+
+      const shape = {
+        coords: [1, 1, 1, 20, 18, 20, 18, 1],
+        type: "poly",
+      };
+
+      for (let i = 0; i < beaches.length; i++) {
+        const beach = beaches[i];
+        new google.maps.Marker({
+         position: { lat: beach[1], lng: beach[2] },
+          map,
+          icon: image,
+          shape: shape,
+          title: beach[0],
+          zIndex: beach[3],
+      });
+    }
+  }
+    const triangleCoords = [
+      { lat: 43.65474467779268, lng: 51.13803831329659},//naberjka
+      { lat: 43.6529196584168, lng: 51.141196126260404},//astana
+      { lat:43.66062953466289, lng: 51.156312176178076},//dream
+      { lat:43.667205852537194,lng: 51.15193708075702 },//trk
+      { lat: 43.666856638763136, lng: 51.13554760942042}//sber
+    ];
+    // Construct the polygon.
+    function setPoly(map){
+      const bermudaTriangle = new google.maps.Polygon({
+        paths: triangleCoords,
+        strokeColor: "#FF0000",
+        strokeOpacity: 0.8,
+        strokeWeight: 2,
+        fillColor: "#FF0000",
+        fillOpacity: 0.35,
+      });
+      bermudaTriangle.setMap(map);
+   }
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBPiTALBRqLQeoSuQEBieEiqt4ApqR0_M&callback=myMap"></script>
+
+
+
+</body>
+</html>
